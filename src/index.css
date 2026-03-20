@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Syne", sans-serif;
+  --color-primary: #a855f7;
+  --color-secondary: #ec4899;
+  --color-accent: #06b6d4;
+  
+  --color-background: var(--bg-main);
+  --color-foreground: var(--text-main);
+  --color-border: var(--border-subtle);
+  
+  --color-bg-base: #030014;
+  --color-text-base: #d4d4d8;
+  --color-text-header: #f4f4f5;
+  --color-border-subtle: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  :root {
+    --bg-main: #030014;
+    --text-main: #d4d4d8;
+    --text-header: #f4f4f5;
+    --border-subtle: rgba(255, 255, 255, 0.05);
+    --pill-bg: rgba(17, 17, 26, 0.6);
+    --pill-bg-active: rgba(39, 39, 42, 0.8);
+    --pill-border-active: rgba(168, 85, 247, 0.4);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    @apply overflow-x-hidden antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--text-header);
+    @apply font-bold tracking-tight;
+    font-family: var(--font-display);
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .glass {
+    background-color: var(--border-subtle);
+    @apply backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent;
+  }
+
+  .glow-button {
+    @apply relative overflow-hidden transition-all duration-300 hover:shadow-[0_0_25px_rgba(56,189,248,0.4)] hover:brightness-110;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
