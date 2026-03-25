@@ -114,9 +114,9 @@ export default function Hero() {
           >
             {/* Subtle accent glow */}
             <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 blur-[50px] pointer-events-none group-hover:bg-primary/20 transition-all duration-700" />
-            
+
             <span className="relative z-10">
-              <span className="text-foreground font-bold">Full Stack Developer (MERN)</span> focused on <span className="text-primary font-semibold">React.js</span> and <span className="text-primary font-semibold">Tailwind CSS</span>, with hands-on experience building responsive user interfaces and backend features using <span className="text-primary font-semibold">Node.js</span>, <span className="text-primary font-semibold">Express</span>, and <span className="text-primary font-semibold">MongoDB</span>. 
+              <span className="text-foreground font-bold">Full Stack Developer (MERN)</span> focused on <span className="text-primary font-semibold">React.js</span> and <span className="text-primary font-semibold">Tailwind CSS</span>, with hands-on experience building responsive user interfaces and backend features using <span className="text-primary font-semibold">Node.js</span>, <span className="text-primary font-semibold">Express</span>, and <span className="text-primary font-semibold">MongoDB</span>.
               Prioritizing clean UX, modular component architecture, REST APIs, and delivering production-ready, end-to-end web applications.
             </span>
           </motion.div>
