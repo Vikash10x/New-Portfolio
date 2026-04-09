@@ -5,6 +5,14 @@ import ProjectPreviewModal from './ProjectPreviewModal';
 
 const projects = [
   {
+    title: 'Full Stack Course Selling Platform',
+    description: 'A Full Stack Course Selling Application that allows users to browse, purchase, and manage online courses. The application is built using React (Vite) for the frontend and Node.js with Express for the backend, with REST APIs handling data communication and authentication.',
+    image: '/Image/card_4.png',
+    tags: ['React (Vite)', ' JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT Authentication', 'REST APIs', 'Git', 'GitHub', 'Vercel', 'Render'],
+    github: 'https://github.com/Vikash10x/Course-Selling-App',
+    live: 'https://course-selling-app-eosin.vercel.app/',
+  },
+  {
     title: 'Video Editing Services',
     description: `I’m a creative video editor delivering high-quality, impactful edits.
 From short- form content to long - form videos, I tailor each project to the vision.
@@ -30,14 +38,7 @@ My goal is to bring stories to life through clean and modern editing.`,
     github: "https://github.com/Vikash10x/Weather-app",
     live: "https://vikash10x.github.io/Weather-app/",
   },
-  {
-    title: 'Social Media App',
-    description: 'A modern social platform with real-time chat, post sharing, and user interactions. Built with Socket.io for instant messaging and AWS S3 for media storage.',
-    image: 'https://picsum.photos/seed/social/800/600',
-    tags: ['MERN', 'Socket.io', 'Redux'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-  },
+
 ];
 
 export default function Projects() {
@@ -70,11 +71,11 @@ export default function Projects() {
           >
             PROJECTS
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "6rem" }}
             viewport={{ once: true }}
-            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full mb-8" 
+            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full mb-8"
           />
           <motion.p
             initial={{ opacity: 0 }}

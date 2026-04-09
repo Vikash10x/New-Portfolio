@@ -122,7 +122,7 @@ export default function Hero() {
           </motion.div>
 
           <a
-            href="/Image/Resume.pdf"
+            href="public/Image/Resume.pdf"
             download
             className="px-8 py-4 rounded-full bg-primary text-white font-bold text-lg hover:bg-primary/90 transition-all shadow-[0_10px_30px_rgba(168,85,247,0.4)] hover:shadow-[0_15px_40px_rgba(168,85,247,0.6)] hover:-translate-y-1"
           >
