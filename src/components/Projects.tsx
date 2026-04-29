@@ -13,6 +13,14 @@ const projects = [
     live: 'https://course-selling-app-eosin.vercel.app/',
   },
   {
+    title: 'Grocify',
+    description: "A modern, responsive online grocery website, built with React, Tailwind CSS, and GSAP for smooth animations and seamless user experience. Grocify provides category-based browsing, detailed product listings, smooth GSAP-powered transitions, and a fully responsive UI. The highlight feature is its AI-powered chatbot, built with React and Tailwind CSS, and optimized with predefined Q&A, knowledge base integration, Gemini AI API with key rotation, and domain restrictions for accurate and cost-effective responses.Deployment is handled on Vercel serverless functions, with secure environment variable management for API keys.",
+    image: '/Image/card_5.webp',
+    tags: ['React.js', 'TailwindCSS', 'GSAP', 'Gemini API', 'AI Chatbot'],
+    github: "https://github.com/Vikash10x/-Grocify",
+    live: "https://grocify-f2g0fdqkz-vikashs-projects-a57d5d03.vercel.app/",
+  },
+  {
     title: 'Video Editing Services',
     description: `I’m a creative video editor delivering high-quality, impactful edits.
 From short- form content to long - form videos, I tailor each project to the vision.

@@ -16,7 +16,7 @@ const educationData = [
     id: 2,
     degree: 'Senior Secondary (Class 12)',
     institution: 'Arya Public School',
-    date: '2021 - 2023',
+    date: '2022 - 2023',
     location: 'Sikar, Rajasthan, India',
     description: 'Completed Senior Secondary education with a focus on Mathematics and Physics. Participated in national-level science exhibitions.',
     score: 'Percentage: 63%',
@@ -47,11 +47,11 @@ export default function Education() {
           >
             EDUCATION
           </motion.h2>
-          <motion.div 
+          <motion.div
             initial={{ width: 0 }}
             whileInView={{ width: "6rem" }}
             viewport={{ once: true }}
-            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full mb-8" 
+            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full mb-8"
           />
         </div>
 
