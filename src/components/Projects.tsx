@@ -5,10 +5,18 @@ import ProjectPreviewModal from './ProjectPreviewModal';
 
 const projects = [
   {
+    title: 'Luxury Hotel Booking Platform',
+    description: 'Luxury Hotel Booking Platform is a full-stack MERN application that allows users to explore luxury hotels, view detailed room information, and book accommodations through a secure and responsive interface. The platform features user authentication, room availability management, booking functionality, and an admin dashboard for managing hotels, rooms, and reservations. Built with modern web technologies, it provides a fast, scalable, and seamless booking experience across all devices.',
+    image: '/Image/card_6.png',
+    tags: ['Reactjs', ' JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs', ' Tailwind CSS'],
+    github: 'https://github.com/Vikash10x/HotelEase',
+    live: '',
+  },
+  {
     title: 'Full Stack Course Selling Platform',
     description: 'A Full Stack Course Selling Application that allows users to browse, purchase, and manage online courses. The application is built using React (Vite) for the frontend and Node.js with Express for the backend, with REST APIs handling data communication and authentication.',
     image: '/Image/card_4.png',
-    tags: ['React (Vite)', ' JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'Mongoose', 'JWT Authentication', 'REST APIs', 'Git', 'GitHub', 'Vercel', 'Render'],
+    tags: ['Reactjs', ' JavaScript', 'Node.js', 'Express.js', 'Tailwind CSS', 'MongoDB', 'JWT', 'REST APIs'],
     github: 'https://github.com/Vikash10x/Course-Selling-App',
     live: 'https://course-selling-app-eosin.vercel.app/',
   },
