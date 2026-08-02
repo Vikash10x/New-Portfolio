@@ -10,7 +10,7 @@ const projects = [
     image: '/Image/card_6.png',
     tags: ['Reactjs', ' JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'REST APIs', ' Tailwind CSS'],
     github: 'https://github.com/Vikash10x/HotelEase',
-    live: '',
+    live: 'https://hotel-ease-seven.vercel.app/',
   },
   {
     title: 'Full Stack Course Selling Platform',
