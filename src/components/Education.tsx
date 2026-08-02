@@ -51,7 +51,7 @@ export default function Education() {
             initial={{ width: 0 }}
             whileInView={{ width: "6rem" }}
             viewport={{ once: true }}
-            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full mb-8"
+            className="h-1 bg-gradient-to-r from-primary via-purple-400 to-accent rounded-full mb-8"
           />
         </div>
 

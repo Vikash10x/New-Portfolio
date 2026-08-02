@@ -127,7 +127,7 @@ export default function Contact() {
             initial={{ width: 0 }}
             whileInView={{ width: "8rem" }}
             viewport={{ once: true }}
-            className="h-1 bg-gradient-to-r from-primary via-info to-transparent rounded-full"
+            className="h-1 bg-gradient-to-r from-primary via-purple-400 to-accent rounded-full"
           />
         </div>
 

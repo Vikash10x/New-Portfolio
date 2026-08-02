@@ -140,7 +140,7 @@ export default function Achievements() {
             initial={{ width: 0 }}
             whileInView={{ width: "6rem" }}
             viewport={{ once: true }}
-            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full" 
+            className="h-1 bg-gradient-to-r from-primary via-purple-400 to-accent rounded-full" 
           />
         </div>
 

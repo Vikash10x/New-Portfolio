@@ -13,6 +13,14 @@ const projects = [
     live: 'https://hotel-ease-seven.vercel.app/',
   },
   {
+    title: 'LAVO India – Premium Shopify & Framer eCommerce Store',
+    description: 'Built a premium eCommerce storefront using Shopify and Framer, featuring responsive layouts, reusable Shopify sections, dynamic product pages with Shopify Liquid, and a modern UI optimized for performance and seamless user experience across all devices.',
+    image: '/Image/card_7.png',
+    tags: ['Shopify', 'Shopify Liquid', 'Framer', 'HTML', 'CSS', 'JavaScript'],
+    github: '#',
+    live: 'https://lavoindia.com/',
+  },
+  {
     title: 'Full Stack Course Selling Platform',
     description: 'A Full Stack Course Selling Application that allows users to browse, purchase, and manage online courses. The application is built using React (Vite) for the frontend and Node.js with Express for the backend, with REST APIs handling data communication and authentication.',
     image: '/Image/card_4.png',
@@ -46,14 +54,14 @@ My goal is to bring stories to life through clean and modern editing.`,
     github: "https://github.com/Vikash10x/Amazon-Clone",
     live: 'https://amazon-clone-orcin-two.vercel.app/',
   },
-  {
-    title: 'Weather App',
-    description: "The Weather App provides real-time updates on any city’s weather, showing accurate temperature and conditions. Its clean and user-friendly design makes daily planning effortless.",
-    image: '/Image/card_3.png',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    github: "https://github.com/Vikash10x/Weather-app",
-    live: "https://vikash10x.github.io/Weather-app/",
-  },
+  // {
+  //   title: 'Weather App',
+  //   description: "The Weather App provides real-time updates on any city’s weather, showing accurate temperature and conditions. Its clean and user-friendly design makes daily planning effortless.",
+  //   image: '/Image/card_3.png',
+  //   tags: ['HTML', 'CSS', 'JavaScript'],
+  //   github: "https://github.com/Vikash10x/Weather-app",
+  //   live: "https://vikash10x.github.io/Weather-app/",
+  // },
 
 ];
 
@@ -91,7 +99,7 @@ export default function Projects() {
             initial={{ width: 0 }}
             whileInView={{ width: "6rem" }}
             viewport={{ once: true }}
-            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full mb-8"
+            className="h-1 bg-gradient-to-r from-primary via-purple-400 to-accent rounded-full mb-8"
           />
           <motion.p
             initial={{ opacity: 0 }}
@@ -168,32 +176,34 @@ function ProjectCard({
       onMouseLeave={() => setIsHovered(false)}
       className="group relative rounded-[1.5rem] border border-border bg-background backdrop-blur-xl overflow-hidden hover:shadow-[0_20px_60px_rgba(168,85,247,0.15)] hover:border-primary/30 transition-all duration-500 shadow-sm"
     >
-      <div className="aspect-[16/10] overflow-hidden relative p-3 text-foreground">
-        <motion.img
-          animate={{ scale: isHovered ? 1.05 : 1 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover rounded-xl"
-          referrerPolicy="no-referrer"
-        />
-        <div className="absolute inset-0 bg-background/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4 backdrop-blur-[2px]">
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noreferrer"
-            className="p-4 rounded-full bg-background/80 border border-border hover:bg-primary transition-all duration-300"
-          >
-            <Github size={22} className="text-foreground transition-colors group-hover:text-white" />
-          </a>
-          <a
-            href={project.live}
-            target="_blank"
-            rel="noreferrer"
-            className="p-4 rounded-full bg-background/80 border border-border hover:bg-primary transition-all duration-300"
-          >
-            <ExternalLink size={22} className="text-foreground transition-colors group-hover:text-white" />
-          </a>
+      <div className="aspect-[16/10] p-3 text-foreground">
+        <div className="relative w-full h-full overflow-hidden rounded-xl">
+          <motion.img
+            animate={{ scale: isHovered ? 1.05 : 1 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-4 backdrop-blur-[3px]">
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="p-4 rounded-full bg-background/80 border border-border hover:bg-primary transition-all duration-300 shadow-md"
+            >
+              <Github size={22} className="text-foreground transition-colors group-hover:text-white" />
+            </a>
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noreferrer"
+              className="p-4 rounded-full bg-background/80 border border-border hover:bg-primary transition-all duration-300 shadow-md"
+            >
+              <ExternalLink size={22} className="text-foreground transition-colors group-hover:text-white" />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -217,7 +227,7 @@ function ProjectCard({
 
         <button
           onClick={onPreview}
-          className="flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-all group/btn"
+          className="flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground hover:text-primary transition-all group/btn cursor-pointer"
         >
           <div className="relative flex items-center">
             <div className="w-8 h-[1px] bg-border group-hover/btn:w-12 group-hover/btn:bg-primary transition-all duration-500" />
@@ -229,8 +239,3 @@ function ProjectCard({
     </motion.div>
   );
 }
-
-
-
-
-

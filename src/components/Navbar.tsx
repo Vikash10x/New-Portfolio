@@ -59,6 +59,10 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Background Track Line */}
+      <div className="fixed top-0 left-0 right-0 h-[2px] bg-white/10 z-[59]" />
+
+      {/* Animated Scroll Progress Line */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-primary via-secondary to-accent z-[60] origin-left"
         style={{ scaleX }}
@@ -126,8 +130,8 @@ export default function Navbar() {
             whileTap={{ scale: 0.95 }}
             className={cn(
               "hidden md:block px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest transition-all shadow-xl",
-              activeSection === 'contact' 
-                ? "bg-primary text-white shadow-primary/20" 
+              activeSection === 'contact'
+                ? "bg-primary text-white shadow-primary/20"
                 : "bg-foreground text-background hover:bg-primary hover:text-white"
             )}
           >

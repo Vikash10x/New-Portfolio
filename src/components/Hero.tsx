@@ -79,6 +79,22 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="w-full md:w-[55%] flex flex-col items-center md:items-start text-center md:text-left"
         >
+          {/* Open to Work Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-bold tracking-wider uppercase mb-6 backdrop-blur-xl shadow-[0_0_20px_rgba(16,185,129,0.15)] group hover:border-emerald-500/40 transition-all cursor-default select-none"
+          >
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500 shadow-[0_0_8px_#10b981]"></span>
+            </span>
+            <span className="text-emerald-400 font-extrabold tracking-widest">Open to Work</span>
+            <span className="text-emerald-500/40 hidden sm:inline">•</span>
+            <span className="text-muted-foreground/80 font-medium text-[11px] normal-case hidden sm:inline">Full-Time & Freelance</span>
+          </motion.div>
+
           <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-foreground mb-2 tracking-wide leading-tight">
             Hi, I am <motion.span
               animate={{ rotate: [0, 14, -8, 14, -4, 10, 0, 0] }}

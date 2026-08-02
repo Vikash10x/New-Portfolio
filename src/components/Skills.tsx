@@ -32,6 +32,8 @@ const skills = [
   { name: 'Vercel', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg', needsBg: true },
   { name: 'Netlify', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg' },
   { name: 'Render', logo: 'https://static-00.iconduck.com/assets.00/render-icon-512x512-u1u2u2u1.png', needsBg: true },
+  { name: 'Shopify', logo: 'https://cdn.simpleicons.org/shopify' },
+  { name: 'Framer', logo: 'https://cdn.simpleicons.org/framer/0055FF' },
 ];
 
 export default function Skills() {
@@ -89,7 +91,7 @@ export default function Skills() {
             initial={{ width: 0 }}
             whileInView={{ width: "6rem" }}
             viewport={{ once: true }}
-            className="h-1 bg-gradient-to-r from-primary to-transparent rounded-full mb-8" 
+            className="h-1 bg-gradient-to-r from-primary via-purple-400 to-accent rounded-full mb-8" 
           />
           <motion.p
             initial={{ opacity: 0 }}

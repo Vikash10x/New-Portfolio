@@ -96,13 +96,14 @@ export default function ProjectPreviewModal({ isOpen, onClose, project }: Projec
             </div>
 
             {/* Info Side */}
-            <div className="w-full lg:w-[400px] p-8 flex flex-col justify-between bg-background/50 backdrop-blur-md">
+            <div className="w-full lg:w-[450px] p-6 md:p-8 flex flex-col justify-between bg-background/50 backdrop-blur-md overflow-y-auto max-h-full">
               <div>
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-3xl font-bold tracking-tight text-foreground">{project.title}</h2>
+                <div className="flex items-start justify-between gap-4 mb-6">
+                  <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground leading-tight">{project.title}</h2>
                   <button
                     onClick={onClose}
-                    className="p-2 rounded-full hover:bg-accent/10 text-muted-foreground hover:text-foreground transition-colors"
+                    className="p-2 shrink-0 rounded-full hover:bg-accent/10 text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
+                    aria-label="Close modal"
                   >
                     <X size={24} />
                   </button>
@@ -119,27 +120,37 @@ export default function ProjectPreviewModal({ isOpen, onClose, project }: Projec
                   ))}
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed mb-8">
+                <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-8">
                   {project.description}
                 </p>
               </div>
 
-              <div className="space-y-4">
+              <div className="space-y-4 pt-4 mt-auto border-t border-border/20">
                 <div className="grid grid-cols-2 gap-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center justify-center gap-2 py-3 rounded-xl bg-accent/5 border border-border hover:bg-accent/10 text-foreground font-bold transition-all"
-                  >
-                    <Github size={18} />
-                    Code
-                  </a>
+                  {project.github && project.github !== '#' ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-center gap-2 py-3 rounded-xl bg-accent/5 border border-border hover:bg-accent/10 text-foreground font-bold transition-all"
+                    >
+                      <Github size={18} />
+                      Code
+                    </a>
+                  ) : (
+                    <button
+                      disabled
+                      className="flex items-center justify-center gap-2 py-3 rounded-xl bg-accent/5 border border-border/40 text-muted-foreground/50 font-bold cursor-not-allowed opacity-60"
+                    >
+                      <Github size={18} />
+                      Code
+                    </button>
+                  )}
                   <a
                     href={project.live}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold glow-button"
+                    className="flex items-center justify-center gap-2 py-3 rounded-xl bg-primary text-white font-bold glow-button hover:opacity-95 transition-all"
                   >
                     <ExternalLink size={18} />
                     Live Demo
