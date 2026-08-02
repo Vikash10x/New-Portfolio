@@ -51,7 +51,7 @@ function TiltProfileImage() {
         className="w-full h-full scale-110" // scale slightly to hide edges during tilt
       >
         <img
-          src="public/Image/self.png"
+          src="/Image/self.png"
           alt="Vikash Kumawat"
           className="w-[110%] h-[110%] object-cover -ml-[2%] -mt-[3%]"
           referrerPolicy="no-referrer"
