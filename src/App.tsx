@@ -69,14 +69,14 @@ export default function App() {
             {/* Footer */}
             <footer className="py-12 pb-44 border-t border-border/10 text-center text-foreground/40 text-sm relative z-30">
               <p className="font-medium">© {new Date().getFullYear()} Vikash Kumawat - Always building, always learning.</p>
-              {/* <a
+              <a
                 href="https://portfolio-beryl-mu-2txm47txd3.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex items-center gap-1 hover:text-primary transition-colors font-medium border-b border-transparent hover:border-primary/30 pb-0.5"
               >
                 Previous portfolio <span>↗</span>
-              </a> */}
+              </a>
             </footer>
           </main>
         )}
