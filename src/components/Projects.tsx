@@ -34,7 +34,7 @@ const projects = [
     image: '/Image/card_5.webp',
     tags: ['React.js', 'TailwindCSS', 'GSAP', 'Gemini API', 'AI Chatbot'],
     github: "https://github.com/Vikash10x/-Grocify",
-    live: "https://grocify-f2g0fdqkz-vikashs-projects-a57d5d03.vercel.app/",
+    live: "https://grocify-gules.vercel.app/",
   },
   {
     title: 'Video Editing Services',
