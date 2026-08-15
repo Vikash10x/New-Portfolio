@@ -25,7 +25,7 @@ const icons = [
   { id: 'github', icon: Github, label: 'GitHub', href: 'https://github.com/Vikash10x' },
   { id: 'linkedin', icon: Linkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/vikash-kumawat-186a01290/' },
   { id: 'leetcode', icon: LeetCodeIcon, label: 'LeetCode', href: 'https://leetcode.com/u/vikash_80/' },
-  { id: 'instagram', icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/_vikash8619/' },
+  { id: 'instagram', icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/vikash_kumawat' },
   { id: 'whatsapp', icon: WhatsAppIcon, label: 'WhatsApp', href: 'https://wa.me/8619298781' },
   { id: 'twitter', icon: XIcon, label: 'X', href: 'https://x.com/vikashkumawattt' }
 ];
